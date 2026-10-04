@@ -16,7 +16,7 @@ const GeneralInfo = () => {
     setIsEditing(false);
   };
   return (
-    <div>
+    <div className="cv-section">
       <h2>General Information</h2>
       {isEditing ? (
         <form onSubmit={handleSubmit}>
@@ -27,7 +27,7 @@ const GeneralInfo = () => {
           <input type="email" value={info.email} name="email" onChange={handleChange} required />
 
           <label>Enter Phone number</label>
-          <input type="number" value={info.phone} name="phone" onChange={handleChange} />
+          <input type="tel" value={info.phone} name="phone" onChange={handleChange} />
 
           <button type="submit">Submit</button>
         </form>

@@ -15,7 +15,7 @@ const Education = () => {
   };
 
   return (
-    <div>
+    <div  className="cv-section">
        <h2>Educational Experience</h2>
       {isEditing ? (
         <form onSubmit={handleSubmit}>
